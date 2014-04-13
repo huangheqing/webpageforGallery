@@ -1,0 +1,113 @@
+@import url('http://fonts.googleapis.com/css?family=Englebert');
+@import url('http://fonts.googleapis.com/css?family=Shadows+Into+Light');
+body{
+	text-align:center;
+	/*background-size:1500px 800px;
+	
+	background-repeat:no-repeat;*/
+	background-image:url("images/homeback1.jpg");
+	
+}
+#main{
+	-webkit-box-orient:vertical;
+	-webkit-box-pack:center;
+	display:-webkit-box;
+	
+}
+header{
+	display:block;
+	margin:20px auto;
+}
+#shopbutton{
+	display:block;
+	color:#ffffff;
+	margin:130px auto;
+	background:rgba(250,128,114,0.4);
+	font-size:15px;
+	padding:5px;
+	-webkit-border-radius:50px;
+	width:100px;
+	height:100px;
+	-webkit-transition:-webkit-transform 2s, opacity 2s, background 2s,
+	width 2s, height 2s, font-size 2s ;
+}
+#shopbutton:hover{
+-webkit-transform:rotate(360deg);
+font-size:40px;
+font-weight:bold;
+color:#FFC0CB;
+background:rgba(245,245,245,0.1);
+width:600px;
+height:110px;
+}
+
+#text{
+
+font-family: 'Englebert', sans-serif;
+}
+#textheader{
+font-size:50px;
+font-family:'Shadows Into Light', cursive;
+}
+.tohome{
+	text-decoration:none;
+	color: inherit;
+}
+
+
+#move{
+
+	display:block;
+	margin:40px auto;
+	width:100px;
+	height:100px;
+	position:relative;
+	-webkit-animation-name:movement;
+	-webkit-animation-duration:5s;
+	-webkit-animation-timing-function:ease;
+	-webkit-animation-iteration-count:infinite;
+	
+	
+}
+
+#move:before,
+#move:after{
+	position:absolute;
+	content:'';
+	left:50px;
+	top:0;
+	width:50px;
+	height:80px;
+	background:rgba(238,130,238,1);
+	border-radius:50px 50px 0 0;
+	-webkit-transform:rotate(-45deg);
+	-webkit-transform-origin:0 100%;
+}
+
+#move:after{
+	
+	left:0;
+	-webkit-transform:rotate(45deg);
+	-webkit-transform-origin:100% 100%;
+}
+
+
+@-webkit-keyframes movement{
+	0% {-webkit-transform:translate(0px,0px) rotateY(0deg);}
+	
+	25%{-webkit-transform:translate(200px,0px) rotateY(270deg);}
+	50% {-webkit-transform:translate(-200px,0px) rotate(54deg);}
+	75%{-webkit-transform:translate(-200px,0px) rotateX(300deg);}
+	100%{-webkit-transform:translate(20px,0px) rotateY(0deg);}
+	
+}
+
+#footer{
+	text-align:center;
+	margin:10px auto;
+	font-family:'Shadows Into Light', cursive;
+}
+
+
+
+
